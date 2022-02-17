@@ -9,6 +9,9 @@ body {
 a {
 	text-decoration: none;
 }
+*:focus {
+    outline: none;
+}
 .search_body {
 	width: 100%;
 	height: 680px;
@@ -16,34 +19,35 @@ a {
 }
 @keyframes myanimation {
   0% {
-		background-image: linear-gradient(to right, #c31432, #240b36);
+		background: url('http://trungk18.github.io/img/trungk18.png') no-repeat, linear-gradient(to right, #c31432, #240b36);
 		-webkit-transition: background-image 1000ms linear;
-		-ms-transition: background-image 1000ms linear;
-		transition: background-image 1000ms linear;
+		transition: all .5s ease;
+		-webkit-transition: all 1s ease;
+		
   }
     25%{
 		background-image: linear-gradient(to right, #540E1F, #6E2333);
-		-webkit-transition: background-image 1000ms linear;
-		-ms-transition: background-image 1000ms linear;
-		transition: background-image 1000ms linear;
+		transition: all 1s ease;
+		-webkit-transition: all 1s ease;
+		
   }
     50%{
 		background-image: linear-gradient(to right, #373B44, #4286f4);
-		-webkit-transition: background-image 1000ms linear;
-		-ms-transition: background-image 1000ms linear;
-		transition: background-image 1000ms linear;
+		transition: all 1s ease;
+		-webkit-transition: all 1s ease;
+		
   }
     75%{
 		background-image: linear-gradient(to right, #323232, #0f9b0f);
-		-webkit-transition: background-image 1000ms linear;
-		-ms-transition: background-image 1000ms linear;
-		transition: background-image 1000ms linear;
+		transition: all 1s ease;
+		-webkit-transition: all 1s ease;
+		
   }
     100% {
 		background-image: linear-gradient(to right, #8E0E00, #1F1C18);
-		-webkit-transition: background-image 1000ms linear;
-		-ms-transition: background-image 1000ms linear;
-		transition: background-image 1000ms linear;
+		transition: all 1s ease;
+		-webkit-transition: all 1s ease;
+		
   }
 }
 
@@ -52,7 +56,7 @@ a {
 	width: 90%;
 	max-width: 1400px;
 	margin: 0 auto;
-	padding: 25px 0 20px 0;
+	padding: 30px 0 20px 0;
 	position: absulate;
 }
 
@@ -70,14 +74,16 @@ a {
 	font-family: "Roboto-Medium";
 }
 .header_top .header_join:hover {
-	border: 1px solid #1dbf73;
-	background-color: #1dbf73;
+	border: 1px solid #fd7801;
+	background-color: #fd7801;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
 }
 .h_text_a {
 	font-family: "Roboto-Medium";
 	font-size: 17px;
 	color: #fff;
-	margin: 0 0 0 25px;
+	margin: 0 0 0 20px;
 	text-shadow: 1px 1px 2px #000;
 }
 .h_text_a:hover {
@@ -100,4 +106,111 @@ a {
 	color: #000;
 	margin: 0 -3px 0 -6px;
 }
-/* Chacha ata logo ar css sas*/
+/*header body element*/
+.header_body_element {
+	width: 90%;
+	max-width: 1400px;
+	margin: 90px auto 0 auto;
+	height: 500px;
+	border: 0px solid #000;
+}
+/*search*/
+.search_form {
+	border: 0px solid #000;
+	padding: 0px;
+	margin: 0;
+}
+.search_form input {
+	font-family: "Roboto-Medium";
+	font-size: 15px;
+	color: #323232;
+	padding: 13px;
+	border: 1px solid transparent;
+	width: 540px;
+	border-radius:  4px 0 0 4px ;
+}
+.search_form button {
+	font-family: "Roboto-Medium";
+	font-size: 15px;
+	color: #fff;
+	background-color: #fd7801;
+	padding: 13px 24px !important;
+    border: 1px solid transparent;
+	border-radius: 0 4px 4px 0;
+	cursor: pointer;
+}
+.search_form button:hover {
+	background-color: #dd7401;
+}
+/*search end*/
+/*Popular header*/
+.popular_header {
+	color: #fff;
+	font-family: "Roboto-Medium";
+	font-size: 14px;
+	border: 0px solid #fff;
+	margin: 25px 0 0 0;
+}
+.popular_header ul {
+	list-style-type: none;
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+.popular_header ul li {
+	display: inline;
+	margin: 0px 2px;
+	padding: 0px;
+}
+.popular_header ul li a {
+	color: #fff;
+	padding: 2px 10px;
+	border: 1px solid #fff;
+	border-radius: 100px;
+}
+.popular_header ul li a:hover {
+	color: #323232;
+	background-color: #fff;
+	border: 1px solid transparent;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+}
+.fDOUhz {
+    position: absolute;
+    width: 100px;
+	height:105px;
+    right: 100px;
+    z-index: 10;
+	display: none;
+}
+.fDOUhz0 {
+    position: absolute;
+    width: 50px;
+	height: 55px;
+    right: 95px;
+    z-index: 10;
+	display: none;
+}
+/*Popular header end*/
+/*Location*/
+.h_location {
+	color: #000;
+	font-family: "Roboto-Regular";
+	font-size: 14px;
+	border: 0px solid #fff;
+	padding: 10px 35px;
+	margin: 10px 10px;
+	background-color: rgb(0,0,0,0.1);
+	width: 110px;
+	border-radius: 500px;
+}
+.h_location a {
+	color: #fff;
+}
+/*Search body text*/
+.h_text_search {
+	font-family: "Roboto-Bold";
+	font-size: 50px;
+	max-width: 600px;
+	color: #fff;
+}
